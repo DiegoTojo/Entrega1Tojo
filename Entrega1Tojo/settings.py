@@ -55,7 +55,7 @@ ROOT_URLCONF = 'Entrega1Tojo.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [r'C:\Users\Diego\Desktop\Entrega1Tojo\index\plantillas'],
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

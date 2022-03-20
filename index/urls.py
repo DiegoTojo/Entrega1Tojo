@@ -1,7 +1,8 @@
+from re import template
+from unicodedata import name
 from django.urls import path
-from .views import index, plantilla
+from .views import index
 
 urlpatterns = [
-    path('', index, name='index'),
-    path('plantilla/', plantilla, name= 'plantilla')
+    path('', index)
 ]

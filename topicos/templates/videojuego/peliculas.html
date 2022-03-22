@@ -1,0 +1,18 @@
+{% extends 'index/index.html' %}
+
+
+    {% block 'header_block' %}
+        <h1 class="fw-bolder">Peliculas</h1>
+            <p>
+                Este es el formulario de Peliculas
+            </p>
+    {% endblock 'header_block' %}
+    {% block 'body_block' %}
+        <table>    
+            <form action={% url 'pelicula' %} method ="post">
+                {% csrf_token %}
+                {{formulario.as_table}}
+                <input type="submit" placeholder="enviar">
+            </form>
+        </table>    
+    {% endblock 'body_block' %}
